@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             agent any
             steps {
-                git branch: 'master', url: 'https://github.com/OWASP/Vulnerable-Web-Application.git'
+                git branch: 'master', url: 'https://github.com/Cherlin01/Vulnerable-Web-Application.git'
             }
         }
         stage('Code Quality Check via SonarQube') {
